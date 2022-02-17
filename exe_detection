@@ -27,7 +27,7 @@ namespace TestHoge
             _services = new ServiceCollection().BuildServiceProvider();
             _client.MessageReceived += CommandRecieved;
 
-            string token = "OTQzODYzODQ5OTQwMDQxNzg5.Yg5PtQ.msBvOxUmePsjQX173SgedDbH86o";
+            string token = "";
             await _commands.AddModulesAsync(Assembly.GetEntryAssembly(), _services);
             await _client.LoginAsync(TokenType.Bot, token);
             await _client.StartAsync();
