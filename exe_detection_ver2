@@ -24,7 +24,7 @@ namespace DiscordDotNet
 
         public async Task MainAsync()
         {
-            await _client.LoginAsync(TokenType.Bot, "OTQzODYzODQ5OTQwMDQxNzg5.Yg5PtQ.vZhUKC2OL1zykghY2KTCy-vFqQA");
+            await _client.LoginAsync(TokenType.Bot, "");
             await _client.StartAsync();
 
             await Task.Delay(Timeout.Infinite);
